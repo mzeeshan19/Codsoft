@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav{
+    color: black;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgb(248, 238, 206) 50%,
+        rgb(255, 221, 255)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav2 {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav2 span{
+    padding: 41px;
+    transition: 0.2s ease;
+    font-size: 15px;
+}
+
+#nav2 span:hover{
+    background-color: rgb(247, 204, 63);
+    padding: 41px;
+    cursor: default;
+    transition: 0.2s ease;
+}
+
+#nav h1{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 550;
+    gap: 1.5rem;
+}
+
+#nav img{
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+#content{
+    color: white;
+    height: 500px;
+    width: 100%;
+    background-color: black;
+}
+
+#image img{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: blur(5px);
+    opacity: 0.7;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    left: 18%;
+    gap: 0.5rem;
+}
+
+#text h1{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+#text p{
+    line-height: 22px;
+}
+
+#btn{
+    position: absolute;
+    top: 44%;
+    left: 18%;
+}
+
+#btn button{
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    width: 8rem;
+    height: 2.4rem;
+}
+
+#btn button:hover{
+    background: linear-gradient(
+        to right,
+        rgb(248, 191, 2),
+        rgb(197, 76, 197)60%
+    );
+}
+
+#line{
+    position: absolute;
+    top: 29.5%;
+    left: 16%;
+    width: 3px;
+    height: 190px;
+    border-radius: 10px;
+    background: linear-gradient(
+        to bottom,
+        rgb(248, 191, 2),
+        rgb(197, 76, 197)
+    );
+}
+
+#part3{
+    color: rgba(255, 255, 255, 0.815);
+    display: flex;
+    gap: 10rem;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(
+        to right,
+        rgb(248, 191, 2),
+        rgb(197, 76, 197)
+    );
+}
+
+#part3 i{
+    padding-right: 1.6rem;
+}
+
+#part3 h4{
+    margin-top: 3%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 35px;
+}
+
+#a{
+    flex-direction: column;
+    padding-left: 200px;
+}
+
+#b{
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+#c{
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 200px;
+}
+
+#about{
+    padding: 1.3% 50% 0 10.5% ; 
+}
+
+#about h1{
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+#about p{
+    line-height: 25px;
+}
+
+#box{
+    border: 5px solid;
+    position: absolute;
+    top: 92%;
+    right: 15%;
+    bottom: 0;
+    width: 250px;
+    height: 50px;
+}
+
+
+#about-img img{
+    width: 220px;
+    height: 220px;
+    display: flex;
+    position: absolute;
+    top: 75%;
+    right: 16%;
+    bottom: 0;
+}
