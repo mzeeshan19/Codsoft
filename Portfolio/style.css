@@ -1,0 +1,402 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(26, 26, 77);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    caret-color: transparent;
+}
+
+
+/* Main Section */
+
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(3, 3, 29);
+    z-index: 999;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover{
+    color: rgb(144, 110, 177);
+    font-size: 1.05rem;
+}
+
+
+.left{
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Main Section Left Texts */
+.firstSection > div{
+    width: 40%;
+    cursor: default;
+}
+
+.leftSection{
+    font-size: 3rem;
+    margin: 400px 90px;
+
+}
+
+
+
+/* Zeeshan Purple Color */
+.purple{
+    color: blueviolet;
+}
+
+/* Element Purple Color */
+
+#element{
+    color: blueviolet;
+}
+
+.leftSection .btn{
+    background: #8245bb;
+    color: white;
+    padding: 12px;
+    border: 2px solid;
+    border-radius: 13px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Buttons */
+
+.leftSection .buttons{
+    padding: 22px 0;
+}
+
+.leftSection .btn1{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Images Section */
+.rightSection{
+    padding: 223px;
+}
+
+.rightSection .pic{
+    width: 37%;
+    top: 200px;
+    right: 110px;
+    position: absolute;
+    transition-duration: 1s;
+}
+
+
+.rightSection .shape{
+    width: 25%;
+    top: 223px;
+    left: 63.5%;
+    position: absolute;
+    transition-duration: 1s;
+}
+
+.rightSection.images{
+    width: 80px;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.images:hover .shape{
+    top: 160px;
+    transition-duration: 1s;
+}
+
+.images:hover .pic{
+    right: 180px;
+    transition-duration: 1s;
+
+}
+
+/* About Section */
+
+.about{
+    display: flex;
+    padding: 280px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about .pica{
+    margin-left: 340px;
+    margin-right: 34px;
+}
+
+.about .content{
+    margin-right: 260px;
+}
+
+
+.about .content p{
+    margin: 5px 0;
+}
+
+.heading{
+    text-align: left;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    color: #8245bb;
+}
+
+
+/* Skills Section */
+
+.skills{
+    padding: 200px 0;
+}
+
+.skills h1{
+    margin-bottom: 5rem;
+    padding-top: 100px;
+    cursor: default;
+}
+
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 200px 200px 200px;
+}
+
+.skill-container .skill-box{
+    flex: 1 1 5rem;
+    background: #363662;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 5px solid #8245bb;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.skill-box i{
+    font-size: 3.5rem;
+    color: azure;
+}
+
+.skill-container h3{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.skill-container p{
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+.skills .skill-heading{
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    color: #8245bb;
+}
+
+.skill-container .skill-box:hover{
+    background-color: #8245bb;
+    transform: scale(1.05);
+}
+
+/* Projects Section */
+.projects{
+    padding: 100px;
+}
+.projects h1{
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    color: #8245bb;
+    margin-bottom: 4rem;
+}
+
+.pro-container{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    align-items: center;
+    gap: 3rem;
+}
+
+.pro-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.pro-box:hover img{
+    transform: scale(1.1);
+}
+
+.pro-container .pro-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #281e30;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.pro-box .layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), #811e8a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+} 
+
+.pro-box p{
+    padding: 1rem 4rem;
+    font-size: 0.9rem;
+    margin: 0 1rem;
+}
+
+.pro-box h4{
+    font-size: 2rem;
+}
+
+.pro-box:hover .layer{
+    transform: translateY(0);
+}
+
+.pro-box button{
+    padding: 6px 10px;
+    border-radius: 2rem;
+    background-color: white;
+    transition: .5s ease;
+}
+
+.pro-box button:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Contact Section */
+
+.contact{
+    padding: 300px 100px;
+}
+.contact h1{
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    color: #8245bb;
+    margin-bottom: 4rem;
+}
+
+.details h2{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+.details h4{
+    margin-top: 15px;
+}
+
+.details{
+    width: 900px;
+    height: 300px;
+    margin: 0 420px;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    border: 3px solid #811e8a;
+}
+.details h2, h4:hover{
+    cursor: default;
+}
+
+.details:hover{
+    background-color: #811e8a;
+    box-shadow: 0 0 1rem white;
+}
+.details p:hover{
+    border-radius: 2rem;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 1rem #ffffff;
+    cursor: pointer;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Footer */
+footer{
+    background-color: rgb(48, 48, 94);
+}
+
+.footer{
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+}
+
+footer .rights{
+    text-align: center;
+    color: gray;
+    padding: 15px 0;
+}
+
+.rights .icons a{
+    justify-items: center;
+    color: #ffffff;
+    font-size: 1.7rem;
+    height: 10px;
+}
