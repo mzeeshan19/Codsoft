@@ -1,0 +1,53 @@
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.container{
+    background-color: rgb(25, 25, 49);
+    width: 15%;
+    height: 50%;
+    margin: 0 42.5%;
+    border: 2px solid;
+    box-shadow: 100px black;
+}
+.container form input{
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid;
+    box-shadow: 100px white;
+}
+
+.extra{
+    padding: 20px 22px;
+    margin: 0 3px;
+}
+
+.AC{
+    margin: 8px 100px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    justify-content:center; 
+    margin: 8px 0;
+}
+
+.display{
+    width: 220px;
+    height: 80px;
+    font-size: 40px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
